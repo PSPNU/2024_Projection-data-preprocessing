@@ -1,0 +1,16 @@
+[작업내역]
+latest update: 2024.02.29
+
+1) 불러오기
+- shp 파일: SGIS 2018년 시군구 경계자료: 좌표계 5179로 맞출것 
+- csv 파일: R에서 작업, projection data에서 coordinate 정보만 빼와서 저장해둠 (용량 문제) : coord.csv
+- csv 파일 불러올 때 '프로젝트 좌표계'로 설정해야지 지도랑 잘 겹쳐짐
+
+2) 바다 있는 지역의 포인트는 직접 선택해서 제거! coord_delete_ocean.shp
+
+3) 최단거리로 속성 결합
+- 벡터1: 시군구 shp 파일
+- 벡터2: 포인트 (projection data)
+
+4) 내보내기 coord_1-6_sgg.xlsx 
+- 스프레드 시트로 내보내기로 해야지 잘 내보내짐 
