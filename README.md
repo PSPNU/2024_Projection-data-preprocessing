@@ -1,4 +1,4 @@
-Lastest updata: 2024.03.01.
+Lastest update: 2024.03.01.
 Written by 서울대학교 보건대학원 오지은
 
 해당 코드들은 CMIP6 모델들을 netcdf 형태로 다운받은 후 진행되는 작업을 다루고 있습니다.
