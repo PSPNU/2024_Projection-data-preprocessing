@@ -405,8 +405,6 @@ print(paste0("lon 일치 수: ", sum(a5$lon==a$lon)))
 # 수정된 데이터 
 tmeanlist[[model_temp]] <- a5
 
-
-
 # future
 a <- tmeanlist_temp[str_detect(names(tmeanlist_temp),"ssp245")] %>% as.data.frame()
 length(unique(a[,1])) #30960개 (매달 30일로 설정됨)
@@ -506,7 +504,7 @@ write.csv(coord_list[["KACE-1-0-G"]], "C:/Users/Jieun/Dropbox/1.Projection studi
 ############ 2. 바다에 해당되는 그리드 마스킹 처리 후 
 ############    가장 가까운 격자에 매칭되도록 시군구 정제
 ############    바다에 해당되는 격자는 제거하고 진행!!! 
-############ QGIS에서 작업 진행
+############ QGIS에서 작업 진행 (00 QGIS_v1.1.txt 참고)
 ####################################################
 
 # 파일명: coord_1-6_sgg.xlsx
